@@ -451,6 +451,10 @@ body {
   max-width: 500px;
 }
 
+.image-section>img{
+    transform: rotateY(200deg);
+}
+
 .main-image {
   width: 100%;
   height: auto;
@@ -559,4 +563,72 @@ body {
   margin-top: 10px;
   font-size: 14px;
   color: #666;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fce4ec; /* Light pink background */
+}
+
+.image-section img {
+  max-width: 500px; /* Adjust size as needed */
+  height: auto;
+}
+
+.form-section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-left: 50px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #888;
+}
+
+.tab.active {
+  color: #333;
+  border-bottom: 2px solid #ff6347; /* Red underline for active tab */
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.register-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6347; /* A vibrant red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #e5533d; /* Darker red on hover */
 }
