@@ -4,7 +4,7 @@ const SmartBandBanner = () =>
 {
     return (
         <section className="smart-band-banner">
-            <div className="container">
+            <div className="container1">
                 <div className="banner-content">
                     <img
                         src="https://www.pngall.com/wp-content/uploads/14/Messi-PNG-Images.png"
