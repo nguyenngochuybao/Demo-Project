@@ -6,7 +6,7 @@ const AccountPage = () =>
     const [ formData, setFormData ] = useState( "" )
 
     console.log( formData );
-    
+
 
     return (
         <div className="container1">
@@ -16,11 +16,12 @@ const AccountPage = () =>
             <div className="form-section">
                 <div className="tabs">
                     <div className="tab">Login</div>
-                    <div className="tab active">Register</div>
+                    <div className="tab active">Register
+                    </div>
                 </div>
                 <form>
                     <div className="input-group">
-                        <input type="text" placeholder="UserName" onChange={(e)=> setFormData(e.target.value) } />
+                        <input type="text" placeholder="UserName" onChange={ ( e ) => setFormData( e.target.value ) } />
                     </div>
                     <div className="input-group">
                         <input type="email" placeholder="Email" />
