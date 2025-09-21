@@ -8,12 +8,12 @@ const initialState = {
 };
 
 export const registerUser = createAsyncThunk(
-    "auth/registerUser",
+    "user/registerUser",
     async ( userData, { rejectWithValue } ) =>
     {
         try
         {
-            const res = await axios.post( "http://localhost:3000/user", userData );
+            const res = await axios.post( "http://localhost:3000/users", userData );
             return res.data;
         } catch ( err )
         {
@@ -22,12 +22,30 @@ export const registerUser = createAsyncThunk(
     }
 );
 
+export const loginUser = createAsyncThunk(
+    "user/loginUser",
+    async ( loginData ) =>
+    {
+        try
+        {
+            const res = await axios.get( "http://localhost:3000/users", loginData );
+            return res.data;
+        } catch ( err )
+        {
+            console.log( err, "err" );
+           
+        }
+    }
+)
+
 const userSlice = createSlice( {
     name: 'user',
     initialState: initialState,
     reducers: {},
     extraReducers: ( builder ) =>
     {
+
+        // Register
         builder
             .addCase( registerUser.pending, ( state ) =>
             {
@@ -44,6 +62,24 @@ const userSlice = createSlice( {
                 state.loading = false;
                 state.error = action.payload;
             } )
+        
+        // Login
+        builder
+            .addCase( loginUser.pending, ( state ) =>
+            {
+                state.loading = true;
+                state.error = null;
+            } )
+            .addCase( loginUser.fulfilled, ( state, action ) =>
+            {
+                state.loading = false;
+                state.currentUser = action.payload;
+            } )
+            .addCase( loginUser.rejected, ( state, action ) =>
+            {
+                state.loading = false;
+                state.error = action.payload;
+            } );
     }
 } );
 export default userSlice.reducer;

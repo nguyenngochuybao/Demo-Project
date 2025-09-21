@@ -1,29 +1,57 @@
 {
-  "users": [ ],
+  "users": [
+    {
+      "userName": "123",
+      "email": "123",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "userName": "huy bao",
+      "email": "huybao@gmail.com",
+      "password": "123123123",
+      "id": 2
+    },
+    {
+      "userName": "huybao",
+      "email": "Huybao@gmail.com",
+      "password": "123123",
+      "id": 3
+    },
+    {
+      "email": "123",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "1",
+      "password": "1",
+      "id": 5
+    }
+  ],
   "products": [
     {
       "id": 1,
       "name": "Nemeziz 19.3 Firm Ground",
-      "price": 400.000,
+      "price": 400,
       "image": "https://giaydabongtot.com/wp-content/uploads/2020/07/Giay-da-bong-Adidas-Nemeziz-18.1-FG-mau-trang-hong-chinh-hang-8.jpg"
     },
     {
       "id": 2,
       "name": "Nemeziz 19.3 Firm Ground",
-      "price": 400.000,
+      "price": 400,
       "image": "https://giaydabongtot.com/wp-content/uploads/2020/07/Giay-da-bong-Adidas-Nemeziz-18.1-FG-mau-trang-hong-chinh-hang-8.jpg"
     },
-
     {
       "id": 3,
       "name": "Nemeziz 19.3 Firm Ground",
-      "price": 400.000,
+      "price": 400,
       "image": "https://giaydabongtot.com/wp-content/uploads/2020/07/Giay-da-bong-Adidas-Nemeziz-18.1-FG-mau-trang-hong-chinh-hang-8.jpg"
     },
     {
       "id": 4,
       "name": "Nemeziz 19.3 Firm Ground",
-      "price": 400.000,
+      "price": 400,
       "image": "https://giaydabongtot.com/wp-content/uploads/2020/07/Giay-da-bong-Adidas-Nemeziz-18.1-FG-mau-trang-hong-chinh-hang-8.jpg"
     }
   ]
